@@ -21,7 +21,7 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-bg-purple my-nav" id="navbar">
-    <a class="navbar-brand" href="index.jsp">
+    <a class="navbar-brand" href="/jsp/blog/index.jsp">
         <span class="my-brand pl-1">@Sun9</span>
     </a>
 
