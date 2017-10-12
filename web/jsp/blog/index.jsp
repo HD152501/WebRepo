@@ -27,27 +27,38 @@
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li id="nav-item-1" class="nav-item" onmouseover="menu_mouse_over(this);" onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="profile.html">Profile</a>
+            <li id="nav-item-1" class="nav-item" onmouseover="menu_mouse_over(this);"
+                onmouseout="menu_mouse_out(this);">
+                <a class="nav-link" href="">Profile</a>
             </li>
-            <li id="nav-item-2" class="nav-item" onmouseover="menu_mouse_over(this);" onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="dream.html">Dream</a>
+            <li id="nav-item-2" class="nav-item" onmouseover="menu_mouse_over(this);"
+                onmouseout="menu_mouse_out(this);">
+                <a class="nav-link" href="">Dream</a>
             </li>
-            <li id="nav-item-3" class="nav-item" onmouseover="menu_mouse_over(this);" onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="myfavorite.html">My Favorite</a>
+            <li id="nav-item-3" class="nav-item" onmouseover="menu_mouse_over(this);"
+                onmouseout="menu_mouse_out(this);">
+                <a class="nav-link" href="">My Favorite</a>
             </li>
         </ul>
         <%
-            if(session.getAttribute("user") != null) {
+            if (session.getAttribute("user") != null) {
         %>
-            <div class="mr-3 ko-nanumsq" style="color: white; float: right;">
-                <span><%=((UserVO)session.getAttribute("user")).getNickname()%>님, 환영합니다.</span>
-            </div>
+        <div class="mr-3 ko-nanumsq" style="color: white; float: right;">
+            <span><%=((UserVO) session.getAttribute("user")).getNickname()%>님, 환영합니다.</span>
+        </div>
+        <button class="btn btn-outline-danger my-2 mr-2 my-sm-0" type="button" onclick="location.href='/bloglogout'">
+            Sign Out
+        </button>
+        <%
+        } else {
+        %>
+        <button class="btn btn-outline-success my-2 mr-2 my-sm-0" type="button" onclick="location.href='/bloglogin'">
+            Sign In
+        </button>
+        <button class="btn btn-outline-info my-2 my-sm-0" type="button" onclick="">Sign up</button>
         <%
             }
         %>
-        <button class="btn btn-outline-success my-2 mr-2 my-sm-0" type="button" onclick="location.href='/bloglogin'">Sign In</button>
-        <button class="btn btn-outline-info my-2 my-sm-0" type="button" onclick="javascript:location.href=''">Sign up</button>
     </div>
 </nav>
 
