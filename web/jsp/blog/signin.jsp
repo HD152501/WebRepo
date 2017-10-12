@@ -29,19 +29,19 @@
         <ul class="navbar-nav mr-auto">
             <li id="nav-item-1" class="nav-item" onmouseover="menu_mouse_over(this);"
                 onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="">Profile</a>
             </li>
             <li id="nav-item-2" class="nav-item" onmouseover="menu_mouse_over(this);"
                 onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="dream.html">Dream</a>
+                <a class="nav-link" href="">Dream</a>
             </li>
             <li id="nav-item-3" class="nav-item" onmouseover="menu_mouse_over(this);"
                 onmouseout="menu_mouse_out(this);">
-                <a class="nav-link" href="myfavorite.html">My Favorite</a>
+                <a class="nav-link" href="">My Favorite</a>
             </li>
         </ul>
         <button class="btn btn-outline-success my-2 mr-2 my-sm-0" type="button" href="/bloglogin">Sign In</button>
-        <button class="btn btn-outline-info my-2 my-sm-0" type="button" onclick="javascript:location.href=''">Sign up
+        <button class="btn btn-outline-info my-2 my-sm-0" type="button" onclick="">Sign up
         </button>
     </div>
 </nav>
@@ -114,13 +114,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-<script src="../../js/index.js"></script>
-<!-- Mouse Event -->
-<script src="../../js/mouseevent.js"></script>
-<!-- Sign in -->
-<script src="../../js/signin.js"></script>
-<!-- Sign up -->
-<script src="../../js/signup.js"></script>
 
 <%
     if ("error".equals(request.getAttribute("msg"))) {
