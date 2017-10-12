@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>operator</title>
+</head>
+<body>
+
+<input type="text" id="num1" size="5"> +
+<input type="text" id="num2" size="5"> =
+<input type="text" id="result" size="5">
+<input type="button" onclick="add()" value="계산">
+
+<script>
+    function add() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        document.getElementById("result").value =
+            Number(num1) + parseInt(num2);
+    }
+</script>
+</body>
+</html>

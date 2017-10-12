@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>event</title>
+    <style>
+        .bgYellow {
+            background-color: yellow;
+        }
+        .bgBlue {
+            background-color: blue;
+        }
+        .border {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body onload="alert('웹 페이지가 로드되었습니다.');">
+
+<div id="container">
+    <input type="radio" name="color" onclick="changeColor('bgYellow')" value="yellow">노랑색
+    <input type="radio" name="color" onclick="changeColor('bgBlue')" value="blue">파란색
+    <br><br>
+    <input type="text" id="word" onchange="toUpperCase(this)">
+    <br><br>
+    <div id="box" onmouseover="addBorder(this)" onmouseout="removeBorder(this)">마우스를 위에 올려놓으세요</div>
+</div>
+
+<script>
+    function changeColor(color) {
+        var container = document.getElementById("container");
+        container.setAttribute("class", color);
+    }
+    function toUpperCase(word) {
+        word.value = word.value.toUpperCase();
+    }
+    function addBorder(box) {
+        box.setAttribute("class", "border");
+    }
+    function removeBorder(box) {
+        box.removeAttribute("class");
+    }
+</script>
+</body>
+</html>

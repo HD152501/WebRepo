@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>profile</title>
+</head>
+<body>
+
+<h1>프로필</h1>
+<p id="profile"></p>
+
+<script>
+    var id = "2501";
+    var name = "강선구";
+    var age = 19;
+    var height = 178.2;
+    var hobby = ["게임", "게임"];
+
+    document.getElementById("profile").innerHTML =
+        "<ul><li>학번 : " + id + "</li>" +
+        "<li>이름 : " + name + "</li>" +
+        "<li>나이 : " + age + "</li>" +
+        "<li>키 : " + height + "</li>" +
+        "<li>취미 : " + hobby + "</li></ul>";
+</script>
+</body>
+</html>

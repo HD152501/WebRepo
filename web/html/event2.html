@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>event</title>
+    <style>
+
+    </style>
+</head>
+<body onload="alert('웹 페이지가 로드되었습니다.');">
+
+<div id="container">
+    <input type="radio" name="color" onclick="changeColor(this)" value="yellow">노랑색
+    <input type="radio" name="color" onclick="changeColor(this)" value="blue">파란색
+    <br><br>
+    <input type="text" id="word" onchange="toUpperCase(this)">
+    <br><br>
+    <div id="box" onmouseover="addBorder(this)" onmouseout="removeBorder(this)">마우스를 위에 올려놓으세요</div>
+</div>
+
+<script>
+    function changeColor(color) {
+        var container = document.getElementById("container");
+        container.style.backgroundColor = color.value;
+    }
+    function toUpperCase(word) {
+        word.value = word.value.toUpperCase();
+    }
+    function addBorder(box) {
+        box.style.border = "3px solid red";
+    }
+    function removeBorder(box) {
+        box.style.border = "";
+    }
+</script>
+</body>
+</html>

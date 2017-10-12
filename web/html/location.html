@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>location</title>
+</head>
+<body>
+
+<button onclick="printLocation()">Location 정보</button>
+<button onclick="goPage()">페이지 이동</button>
+<p id="result"></p>
+
+<script>
+    function printLocation() {
+        document.getElementById("result").innerHTML = location.href;
+    }
+    function goPage() {
+        location.href = "http://www.google.com";
+    }
+</script>
+</body>
+</html>
